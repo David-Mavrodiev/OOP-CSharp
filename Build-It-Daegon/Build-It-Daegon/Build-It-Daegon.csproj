@@ -46,7 +46,7 @@
     <Compile Include="Buildings\Building.cs" />
     <Compile Include="Common\Color.cs" />
     <Compile Include="Common\Difficulty.cs" />
-    <Compile Include="Interfaces\IChangeable.cs" />
+    <Compile Include="Interfaces\IResourceable.cs" />
     <Compile Include="Resources\Resouce.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
