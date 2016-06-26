@@ -6,7 +6,15 @@
     {
         static void Main(string[] args)
         {
+            // choose difficulty level
 
+
+            while (true)
+            {
+                // our move 
+
+                // enemy move
+            }
         }
     }
 }
