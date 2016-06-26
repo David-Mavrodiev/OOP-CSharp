@@ -11,6 +11,17 @@ namespace Game
         static void Main(string[] args)
         {
             Console.WriteLine("hi gyus");
+
+            // choose dificulty
+
+
+            // gameplay
+            while (true)
+            {
+                // our move
+
+                // enemy move
+            }
         }
     }
 }
