@@ -4,6 +4,7 @@ Teamwork in C# OOP Course in Telerik Academy 2016-2017 Season.
 **Daegon** is a Console Application Game.
 
 **Originally developed by contributors:**
+
 |       Name      | http://telerikacademy.com username |              https://github.com username              |
 |:---------------:|:----------------------------------:|:-----------------------------------------------------:|
 | David Mavrodiev |           david_mavrodiev          | [David-Mavrodiev](https://github.com/David-Mavrodiev) |
