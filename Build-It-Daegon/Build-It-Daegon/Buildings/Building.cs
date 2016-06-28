@@ -7,7 +7,7 @@
     public abstract class Building : IConstructable
     {
         private int size;
-        //test
+        //test 12
         public Building(Position position, Color color, int size)
         {
             this.Position = position;
