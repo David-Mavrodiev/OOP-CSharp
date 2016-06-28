@@ -4,5 +4,6 @@
     {
         void Add(int resource);
         void Remove(int resource);
+        //test
     }
 }
