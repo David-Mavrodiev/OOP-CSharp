@@ -2,6 +2,6 @@
 {
     public interface IValuable
     {
-        void IsPositive(bool isPositive);
+        int IsPositive();
     }
 }
