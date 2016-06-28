@@ -46,6 +46,7 @@
     <Compile Include="Buildings\Building.cs" />
     <Compile Include="Common\Color.cs" />
     <Compile Include="Common\Difficulty.cs" />
+    <Compile Include="Common\Position.cs" />
     <Compile Include="Interfaces\IConstructable.cs" />
     <Compile Include="Interfaces\ILoanable.cs" />
     <Compile Include="Interfaces\IOptionable.cs" />

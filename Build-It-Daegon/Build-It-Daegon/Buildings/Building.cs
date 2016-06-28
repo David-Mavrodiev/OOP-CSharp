@@ -1,12 +1,11 @@
 ﻿namespace Build_It_Daegon.Buildings
 {
-
+    using Build_It_Daegon.Common;
+    using Build_It_Daegon.Interfaces;
     using System;
 
-    public abstract class Building : IResourceable
+    public abstract class Building : IConstructable
     {
-        private Position position;
-        private Color color;
         private int size;
 
         public Building(Position position, Color color, int size)
@@ -16,21 +15,16 @@
             this.Size = size;
         }
 
-        public Position Position
-        {
-            get { return this.position; }
-            private set { this.position = value; }
-        }
+        public Position Position { get; private set; }
 
-        public Color Color
-        {
-            get { return this.color; }
-            private set { this.color = value; }
-        }
+        public Color Color { get; private set; }
 
         public int Size
         {
-            get { return this.size; }
+            get
+            {
+                return this.size;
+            }
             private set
             {
                 if (value < 0)
@@ -43,6 +37,8 @@
         }
 
         public abstract int ManageResources(int resource);
+
+        public abstract void Build();
 
     }
 }
