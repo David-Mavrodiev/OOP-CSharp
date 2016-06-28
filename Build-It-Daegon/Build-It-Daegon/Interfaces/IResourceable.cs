@@ -1,8 +1,10 @@
-﻿namespace Build_It_Daegon.Interfaces
+﻿
+namespace Build_It_Daegon.Interfaces
 {
-    interface IResourceable
+    public interface IResourceable
     {
         void Add(int resource);
         void Remove(int resource);
+      
     }
 }

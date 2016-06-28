@@ -52,6 +52,7 @@
     <Compile Include="Interfaces\IOptionable.cs" />
     <Compile Include="Interfaces\IResourceable.cs" />
     <Compile Include="Interfaces\IValuable.cs" />
+    <Compile Include="Resources\Food.cs" />
     <Compile Include="Resources\Resouce.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
