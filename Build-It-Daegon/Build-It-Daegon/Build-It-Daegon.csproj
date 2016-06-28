@@ -52,8 +52,15 @@
     <Compile Include="Interfaces\IOptionable.cs" />
     <Compile Include="Interfaces\IResourceable.cs" />
     <Compile Include="Interfaces\IValuable.cs" />
+    <Compile Include="Resources\Electricity.cs" />
     <Compile Include="Resources\Food.cs" />
+    <Compile Include="Resources\Happiness.cs" />
+    <Compile Include="Resources\Health.cs" />
+    <Compile Include="Resources\Money.cs" />
+    <Compile Include="Resources\Population.cs" />
     <Compile Include="Resources\Resouce.cs" />
+    <Compile Include="Resources\Security.cs" />
+    <Compile Include="Resources\Water.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
