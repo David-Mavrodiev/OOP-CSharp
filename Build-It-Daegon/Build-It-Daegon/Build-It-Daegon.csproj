@@ -44,6 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Buildings\Building.cs" />
+    <Compile Include="Buildings\ElectricityFactory.cs" />
+    <Compile Include="Buildings\Factory.cs" />
+    <Compile Include="Buildings\FoodFactory.cs" />
+    <Compile Include="Buildings\WaterFactory.cs" />
     <Compile Include="Common\Color.cs" />
     <Compile Include="Common\Difficulty.cs" />
     <Compile Include="Common\Position.cs" />
