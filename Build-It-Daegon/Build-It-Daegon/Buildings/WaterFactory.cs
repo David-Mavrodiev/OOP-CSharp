@@ -15,14 +15,9 @@
         }
 
         // method
-        public override int ManageResources(int resource)
+        public override void ManageResources()
         {
-            throw new NotImplementedException();
-        }
-
-        public override void Build()
-        {
-            throw new NotImplementedException();
+            
         }
     }
 }

@@ -3,7 +3,8 @@
     using Build_It_Daegon.Common;
     using Build_It_Daegon.Interfaces;
     using System;
-
+    using System.Collections;
+    using System.Collections.Generic;
     public abstract class Building : IConstructable
     {
         private int size;
@@ -13,11 +14,34 @@
             this.Position = position;
             this.Color = color;
             this.Size = size;
+            
         }
 
-        public Position Position { get; private set; }
+        public Color Color
+        {
+            get
+            {
+                return this.Color;
+            }
 
-        public Color Color { get; private set; }
+            set
+            {
+                this.Color = value;
+            }
+        }
+
+        public Position Position
+        {
+            get
+            {
+                return this.Position;
+            }
+
+            set
+            {
+                this.Position = value;
+            }
+        }
 
         public int Size
         {
@@ -36,9 +60,6 @@
             }
         }
 
-        public abstract int ManageResources(int resource);
-
-        public abstract void Build();
-
+        public abstract void ManageResources();
     }
 }

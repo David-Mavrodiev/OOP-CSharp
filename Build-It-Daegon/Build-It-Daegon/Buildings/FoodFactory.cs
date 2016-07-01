@@ -5,6 +5,7 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Interfaces;
     using Common;
 
     class FoodFactory : Factory
@@ -15,14 +16,11 @@
         }  
 
         // method
-        public override int ManageResources(int resource)
+        
+        public override void ManageResources()
         {
-            throw new NotImplementedException();
-        }
+            
 
-        public override void Build()
-        {
-            throw new NotImplementedException();
         }
     }
 }

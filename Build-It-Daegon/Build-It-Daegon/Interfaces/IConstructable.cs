@@ -1,7 +1,12 @@
-﻿namespace Build_It_Daegon.Interfaces
+﻿using Build_It_Daegon.Common;
+
+namespace Build_It_Daegon.Interfaces
 {
     public interface IConstructable
     {
-        void Build();
+        Position Position { get; set; }
+
+        Color Color { get; set; }
+
     }
 }
