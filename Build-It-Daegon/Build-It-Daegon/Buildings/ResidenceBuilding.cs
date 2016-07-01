@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Build_It_Daegon.Common;
-using Build_It_Daegon.Resources;
-
-namespace Build_It_Daegon.Buildings
+﻿namespace Build_It_Daegon.Buildings
 {
+    using Build_It_Daegon.Common;
+    using Build_It_Daegon.Resources;
+
     public class ResidenceBuilding : Building
     {
         //private Security Security;
@@ -22,7 +17,7 @@ namespace Build_It_Daegon.Buildings
         {
             security.Amount -= 5;
             health.Amount -= 5;
-            electricity.Amount -= 5; //5 will be const
+            electricity.Amount -= 5; // 5 will be const
             this.Food = food;
             this.Water = water;
             money.Amount -= 1000; // 1000 will be const

@@ -1,18 +1,14 @@
-﻿using Build_It_Daegon.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Build_It_Daegon.Resources
+﻿namespace Build_It_Daegon.Resources
 {
+    using Build_It_Daegon.Interfaces;
+
     public class Health: Resource, IResourceable, IValuable
     {
         public Health(int amount)
         {
             this.Amount = amount;
         }
+
         public void Add(int resource)
         {
             this.Amount += resource;
@@ -24,6 +20,7 @@ namespace Build_It_Daegon.Resources
             {
                 return 1;
             }
+
             return 0;
         }
 

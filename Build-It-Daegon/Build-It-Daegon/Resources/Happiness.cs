@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Build_It_Daegon.Resources
+﻿namespace Build_It_Daegon.Resources
 {
     public class Happiness : Resource
     {
@@ -20,9 +14,10 @@ namespace Build_It_Daegon.Resources
         public void EvaluateHappiness(Food food, Security security, Electricity electricity, Health health, Water water)
         {
             var sum = 0;
-            sum = food.IsPositive() + security.IsPositive() + electricity.IsPositive() + health.IsPositive() + water.IsPositive();
-            this.Amount = Half_Happiness + Half_Happiness * sum;
 
+            sum = food.IsPositive() + security.IsPositive() + electricity.IsPositive() + health.IsPositive() + water.IsPositive();
+
+            this.Amount = Half_Happiness + Half_Happiness * sum;
         }
     }
 }
