@@ -8,6 +8,7 @@
         {
             this.Amount = amount;
         }
+
         public void Add(int resource)
         {
             this.Amount += resource;
@@ -19,6 +20,7 @@
             {
                 return 1;
             }
+
             return 0;
         }
 

@@ -4,7 +4,7 @@
 
     public class Money : Resource, IResourceable
     {
-        private const int Money_Multiplier = 10;
+        private const int MoneyMultiplier = 10;
 
         public Money(int initialAmount)
         {
@@ -24,7 +24,7 @@
         public void GenerateMoney(Population people)
         {
             //Money_Multiplier may be replaced with a constant, depending on the difculty
-            this.Amount += people.Amount * Money_Multiplier; 
+            this.Amount += people.Amount * MoneyMultiplier; 
         }
     }
 }

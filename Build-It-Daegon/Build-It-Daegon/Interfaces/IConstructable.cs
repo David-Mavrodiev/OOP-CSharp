@@ -4,8 +4,8 @@
 
     public interface IConstructable
     {
-        Position Position { get; set; }
+        Position Position { get; }
 
-        Color Color { get; set; }
+        Color Color { get; }
     }
 }

@@ -2,22 +2,20 @@
 {
     public class Happiness : Resource
     {
-        private const int Initial_Happiness = 80;
-        private const int Half_Happiness= 50;
-        private const int Happiness_Multiplier = 10;
+        private const int InitialHappiness = 80;
+        private const int HalfHappiness= 50;
+        private const int HappinessMultiplier = 10;
 
         public Happiness()
         {
-            this.Amount = Initial_Happiness;
+            this.Amount = InitialHappiness;
         }
 
         public void EvaluateHappiness(Food food, Security security, Electricity electricity, Health health, Water water)
         {
-            var sum = 0;
+            var sum = food.IsPositive() + security.IsPositive() + electricity.IsPositive() + health.IsPositive() + water.IsPositive();
 
-            sum = food.IsPositive() + security.IsPositive() + electricity.IsPositive() + health.IsPositive() + water.IsPositive();
-
-            this.Amount = Half_Happiness + Half_Happiness * sum;
+            this.Amount = HalfHappiness + HalfHappiness * sum;
         }
     }
 }

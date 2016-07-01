@@ -1,7 +1,9 @@
 ﻿namespace Build_It_Daegon
 {
-    using Buildings;
-    using Common;
+    using Build_It_Daegon.Buildings;
+    using Build_It_Daegon.Common;
+    using Build_It_Daegon.Interfaces;
+    using Build_It_Daegon.Resources;
     using System;
 
     class Start
