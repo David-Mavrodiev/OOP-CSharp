@@ -15,6 +15,7 @@
         public ResidenceBuilding(Position position, Color color, int size, ref Security security, ref Health health, ref Electricity electricity, ref Food food, ref Water water, ref Money money)
             : base(position, color, size)
         {
+            // TODO we need to decide what value every resource will add and remove
             security.Amount -= 5;
             health.Amount -= 5;
             electricity.Amount -= 5; // 5 will be const
