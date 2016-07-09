@@ -24,9 +24,10 @@
         static Building[] buildings = new Building[2000];
         static int countOfBuildings = 0;
         static ConsoleKeyInfo keyInfo;
-
+        static int sizeOfEnemy = 1;
         static int timer = 0;
         static bool lose = false;
+        static Random random = new Random();
 
         static void drawMap(int[,]map, Building[] buildings, bool changed)
         {
@@ -41,6 +42,10 @@
                         {
                             Console.Write(".");
                         }
+                        else
+                        {
+                            Console.Write("@");
+                        }
                     }
                     Console.WriteLine();
                 }
@@ -54,10 +59,37 @@
                 buildings[i].ManageResources();
             }
         }
-
+        static void EnemyMove(ref int[,] map, ref Building[] buildings, int size)
+        {
+            int x, y;
+            for (y = 0; y < Map_Size_Y; y++) {
+                for (x = 0; x < Map_Size_X; x++)
+                {
+                    if (map[x,y] > 0)
+                    {
+                        if (x - 1 >= 0 && map[x - 1,y] == 0 && random.Next(0, security.Amount / 10) == 0)
+                        {
+                            map[x - 1, y] = map[x - 1, y] + 1;
+                        }
+                        if (x + 1 < Map_Size_X && map[x + 1, y] == 0 && random.Next(0, security.Amount / 10) == 0)
+                        {
+                            map[x + 1, y] = map[x + 1, y] + 1;
+                        }
+                        if (y - 1 >= 0 && map[x, y - 1] == 0 && random.Next(0, security.Amount / 10) == 0)
+                        {
+                            map[x, y - 1] = map[x, y - 1] + 1;
+                        }
+                        if (y + 1 < Map_Size_Y && map[x, y + 1] == 0 && random.Next(0, security.Amount / 10) == 0)
+                        {
+                            map[x, y + 1] = map[x, y + 1] + 1;
+                        }
+                    }
+                }
+            }
+        }
         static void Main(string[] args)
         {
-
+            map[19, 19] = 1;
             int haveInput = 0;
             // choose difficulty level
             Console.WriteLine("Choose difficulty (Easy, Medium or Hard)");
@@ -149,9 +181,11 @@
                     {
                         cursorY = Map_Size_Y - 1;
                     }
-                   
+
                     Console.Clear();
                     keyInfo = new ConsoleKeyInfo();
+                    EnemyMove(ref map, ref buildings, sizeOfEnemy);
+                    sizeOfEnemy++;
                     drawMap(map, buildings, true);
                     Console.SetCursorPosition(0, 20);
                     Console.WriteLine("Electricity: {0} Food: {1} Water: {2} Happiness: {3} \nHealth: {4} Money: {5} Population: {6} Security: {7}",
@@ -161,11 +195,12 @@
                     haveInput = 1;
                 }else
                 {
+                    drawMap(map, buildings, false);
                     Console.SetCursorPosition(0, 20);
-
                     Console.WriteLine("Electricity: {0} Food: {1} Water: {2} Happiness: {3} \nHealth: {4} Money: {5} Population: {6} Security: {7}",
                     electricity.Amount, food.Amount, water.Amount, happiness.Amount, health.Amount, money.Amount, population.Amount, security.Amount);
-                    drawMap(map, buildings, false);
+                    Console.SetCursorPosition(cursorX, cursorY);
+                    Console.WriteLine("X");
                 }
             }
         }
