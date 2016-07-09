@@ -1,10 +1,9 @@
 ﻿namespace Build_It_Daegon.Resources
 {
     using Build_It_Daegon.Interfaces;
-
+    using Common;
     public class Money : Resource, IResourceable
     {
-        private const int MoneyMultiplier = 10;
 
         public Money(int initialAmount)
         {
@@ -24,7 +23,7 @@
         public void GenerateMoney(Population people)
         {
             //Money_Multiplier may be replaced with a constant, depending on the difculty
-            this.Amount += people.Amount * MoneyMultiplier; 
+            this.Amount += people.Amount * Constants.MoneyMultiplier;
         }
     }
 }

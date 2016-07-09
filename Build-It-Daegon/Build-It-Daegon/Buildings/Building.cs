@@ -29,7 +29,7 @@
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("Size can not be negative");
+                    throw new CustomException("Size can not be negative");
                 }
 
                 this.size = value;

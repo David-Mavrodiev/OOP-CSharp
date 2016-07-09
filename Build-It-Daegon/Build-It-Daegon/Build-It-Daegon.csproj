@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Build_It_Daegon</RootNamespace>
     <AssemblyName>Build-It-Daegon</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,6 +53,8 @@
     <Compile Include="Buildings\SecurityBuilding.cs" />
     <Compile Include="Buildings\WaterFactory.cs" />
     <Compile Include="Common\Color.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\CustomException.cs" />
     <Compile Include="Common\Difficulty.cs" />
     <Compile Include="Common\Position.cs" />
     <Compile Include="Enemy\EnemyBuilding.cs" />
@@ -72,7 +75,9 @@
     <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
