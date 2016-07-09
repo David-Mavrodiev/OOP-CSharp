@@ -11,13 +11,13 @@
         public WaterFactory(Position position, Color color, ref Electricity electricity, ref Water water) : base(position, color)
         {
             this.water = water;
-            electricity.Amount -= 5;
+            electricity.Amount += Constants.ElectricityRemove;
         }        
 
         public override void ManageResources()
         {
             // value here must be tested
-            water.Amount += 5;            
+            water.Amount += Constants.WaterAdd;            
         }
     }
 }

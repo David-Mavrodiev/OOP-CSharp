@@ -11,13 +11,13 @@
         public FoodFactory(Position position, Color color, ref Electricity electricity, ref Food food) : base(position, color)
         {
             this.food = food;
-            electricity.Amount -= 5;
+            electricity.Amount += Constants.ElectricityRemove;
         }  
                 
         public override void ManageResources()
         {
             // value here must be tested
-            food.Amount += 10;
+            food.Amount += Constants.FoodAdd;
         }
     }
 }

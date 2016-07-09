@@ -7,7 +7,7 @@
 
 
         public Factory(Position position, Color color)
-            : base(position, color, Constants.Factory_Size)
+            : base(position, color, Constants.FactorySize)
         {
 
         }

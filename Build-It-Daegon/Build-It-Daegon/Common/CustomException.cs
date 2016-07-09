@@ -2,7 +2,7 @@
 
 namespace Build_It_Daegon.Common
 {
-    public class CustomException : Exception
+    public class CustomException : ApplicationException
     {
         public CustomException(String message)
         {

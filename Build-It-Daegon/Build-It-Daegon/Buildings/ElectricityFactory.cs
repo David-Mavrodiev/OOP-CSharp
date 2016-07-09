@@ -16,7 +16,7 @@
         public override void ManageResources()
         {
             // value here must be tested
-            electricity.Amount += 10;
+            electricity.Amount += Constants.ElectricityAdd;
         }        
     }
 }
