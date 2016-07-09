@@ -2,8 +2,8 @@
 {
     public struct Position
     {
-        public int x { get; private set; }
+        public int x { get; set; }
 
-        public int y { get; private set; }
+        public int y { get; set; }
     }
 }

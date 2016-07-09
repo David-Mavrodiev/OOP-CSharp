@@ -8,7 +8,7 @@
     {
         private Water water;
 
-        public WaterFactory(Position position, Color color, ref Electricity electricity, ref Water water) : base(position, color)
+        public WaterFactory(char letter, Position position, Color color, ref Electricity electricity, ref Water water) : base(position, color, letter)
         {
             this.water = water;
             electricity.Amount += Constants.ElectricityRemove;

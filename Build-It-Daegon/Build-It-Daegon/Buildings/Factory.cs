@@ -6,8 +6,8 @@
     {
 
 
-        public Factory(Position position, Color color)
-            : base(position, color, Constants.FactorySize)
+        public Factory(Position position, Color color, char letter)
+            : base(position, color, Constants.FactorySize, letter)
         {
 
         }

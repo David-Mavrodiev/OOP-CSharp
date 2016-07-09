@@ -12,8 +12,8 @@
         private Water Water;
         //private Money Money;
 
-        public ResidenceBuilding(Position position, Color color, int size, ref Security security, ref Health health, ref Electricity electricity, ref Food food, ref Water water, ref Money money)
-            : base(position, color, size)
+        public ResidenceBuilding(char letter, Position position, Color color, int size, ref Security security, ref Health health, ref Electricity electricity, ref Food food, ref Water water, ref Money money)
+            : base(position, color, size, letter)
         {
             // TODO we need to decide what value every resource will add and remove
             security.Amount += Constants.SecurityRemove;

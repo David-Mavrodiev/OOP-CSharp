@@ -7,8 +7,8 @@
     {
         private Security Security;
 
-        public SecurityBuilding(Position position, Color color, int size, ref Security security, ref Electricity electricity)
-            : base(position, color, size)
+        public SecurityBuilding(char letter, Position position, Color color, int size, ref Security security, ref Electricity electricity)
+            : base(position, color, size, letter)
         {
             // TODO we need to decide what value every resource will add and remove
             this.Security = security;

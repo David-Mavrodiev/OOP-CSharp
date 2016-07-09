@@ -7,9 +7,10 @@
     public abstract class Building : IConstructable
     {
         private int size;
-
-        public Building(Position position, Color color, int size)
+        
+        public Building(Position position, Color color, int size, char letter)
         {
+            this.Letter = letter;
             this.Position = position;
             this.Color = color;
             this.Size = size;
@@ -18,6 +19,8 @@
         public Position Position { get; private set; }
 
         public Color Color { get; private set; }
+
+        public char Letter { get; private set; }
 
         public int Size
         {

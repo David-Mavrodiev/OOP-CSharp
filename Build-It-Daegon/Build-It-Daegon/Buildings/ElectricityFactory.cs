@@ -8,7 +8,7 @@
         private Electricity electricity;
 
 
-        public ElectricityFactory(Position position, Color color, ref Electricity electricity) : base(position, color)
+        public ElectricityFactory(char letter, Position position, Color color, ref Electricity electricity) : base(position, color, letter)
         {
             this.electricity = electricity;
         }

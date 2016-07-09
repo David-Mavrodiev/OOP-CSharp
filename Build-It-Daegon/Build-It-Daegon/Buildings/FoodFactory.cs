@@ -8,7 +8,7 @@
         private Food food;
 
 
-        public FoodFactory(Position position, Color color, ref Electricity electricity, ref Food food) : base(position, color)
+        public FoodFactory(char letter, Position position, Color color, ref Electricity electricity, ref Food food) : base(position, color, letter)
         {
             this.food = food;
             electricity.Amount += Constants.ElectricityRemove;

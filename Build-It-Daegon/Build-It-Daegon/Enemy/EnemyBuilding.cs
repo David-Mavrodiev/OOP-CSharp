@@ -15,7 +15,7 @@
         private Water Water;
 
         public EnemyBuilding(Position position, Color color, int size, ref Security security, ref Health health, ref Electricity electricity, ref Food food, ref Water water, ref Money money)
-            : base(position, color, size)
+            : base(position, color, size, 'E')
         {
             // TODO we need to decide what value every resource will add and remove
             security.Amount += Constants.SecurityRemove * 4;

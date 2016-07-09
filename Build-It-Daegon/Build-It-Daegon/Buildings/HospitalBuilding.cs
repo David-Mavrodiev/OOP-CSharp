@@ -8,8 +8,8 @@
         private Health Health;
 
 
-        public HospitalBuilding(Position position, Color color, int size, ref Health health, ref Electricity electicity)
-            : base(position, color, size)
+        public HospitalBuilding(char letter, Position position, Color color, int size, ref Health health, ref Electricity electicity)
+            : base(position, color, size, letter)
         {
             this.Health = health;
             electicity.Amount += Constants.ElectricityRemove;
