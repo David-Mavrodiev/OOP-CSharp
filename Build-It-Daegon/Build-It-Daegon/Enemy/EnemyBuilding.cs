@@ -18,18 +18,18 @@
             : base(position, color, size)
         {
             // TODO we need to decide what value every resource will add and remove
-            security.Amount -= 20;
-            health.Amount -= 10;
-            electricity.Amount -= 15;
+            security.Amount += Constants.SecurityRemove * 4;
+            health.Amount += Constants.HealthRemove * 2;
+            electricity.Amount += Constants.ElectricityRemove * 3;
             this.Food = food;
             this.Water = water;
-            money.Amount -= 2000;
+            money.Amount += Constants.MoneyRemove * 2;
         }
 
         public override void ManageResources()
         {
-            Food.Amount -= 8;
-            Water.Amount -= 8;
+            Food.Amount += Constants.FoodRemove * 2;
+            Water.Amount += Constants.WaterRemove * 2;
         }
     }
 }
