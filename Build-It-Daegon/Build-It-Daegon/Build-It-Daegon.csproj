@@ -54,6 +54,7 @@
     <Compile Include="Common\Color.cs" />
     <Compile Include="Common\Difficulty.cs" />
     <Compile Include="Common\Position.cs" />
+    <Compile Include="Enemy\EnemyBuilding.cs" />
     <Compile Include="Interfaces\IConstructable.cs" />
     <Compile Include="Interfaces\ILoanable.cs" />
     <Compile Include="Interfaces\IOptionable.cs" />
