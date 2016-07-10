@@ -17,7 +17,6 @@
 
         public override void ManageResources()
         {
-            health.Amount += Constants.HealthRemove;
             health.Amount += Constants.HealthAdd;
         }
     }

@@ -28,6 +28,7 @@
         {
             food.Amount += Constants.FoodRemove;
             water.Amount += Constants.WaterRemove;
+
         }
     }
 }

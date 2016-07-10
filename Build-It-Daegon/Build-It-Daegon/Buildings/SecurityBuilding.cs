@@ -18,7 +18,6 @@
         public override void ManageResources()
         {
             security.Amount += Constants.SecurityAdd;
-            security.Amount += Constants.SecurityRemove;
         }
     }
 }
