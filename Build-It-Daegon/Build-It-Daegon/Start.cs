@@ -23,13 +23,14 @@
         static int[,] map = new int[Map_Size_X, Map_Size_Y];
         static Building[] buildings = new Building[2000];
         static int countOfBuildings = 0;
+        static int residenceBuildingsCount = 0; // Used when generating money
         static ConsoleKeyInfo keyInfo;
         static int sizeOfEnemy = 1;
         static int timer = 0;
         static bool lose = false;
         static Random random = new Random();
 
-        static void drawMap(int[,]map, Building[] buildings, bool changed)
+        static void drawMap(int[,] map, Building[] buildings, bool changed)
         {
             int x, y, i;
             if (changed)
@@ -54,20 +55,43 @@
             {
                 if (changed) {
                     Console.SetCursorPosition(buildings[i].Position.x, buildings[i].Position.y);
+                    switch (buildings[i].Color)                                             // Painting buildings
+                    {                                                                       //
+                        case Color.Blue: Console.ForegroundColor = ConsoleColor.Blue;       //
+                            break;                                                          //
+                        case Color.Red: Console.ForegroundColor = ConsoleColor.Red;         //
+                            break;                                                          //
+                        case Color.Green: Console.ForegroundColor = ConsoleColor.Green;     //
+                            break;                                                          //
+                        case Color.Yellow: Console.ForegroundColor = ConsoleColor.Yellow;   //
+                            break;                                                          //
+                        case Color.Gray: Console.ForegroundColor = ConsoleColor.Cyan;       //
+                            break;                                                          //
+                        case Color.Pink: Console.ForegroundColor = ConsoleColor.Magenta;    //
+                            break;                                                          //
+                        default:                                                            //
+                            break;                                                          //
+                    }                                                                       //
                     Console.WriteLine(buildings[i].Letter);
+                    Console.ForegroundColor = ConsoleColor.Gray;                            // Change back to default color
                 }
                 buildings[i].ManageResources();
+                
             }
+            happiness.EvaluateHappiness(food, security, electricity, health, water); // So we can generate money
+            population.CalculatePopulation(happiness, residenceBuildingsCount);      //
+            money.GenerateMoney(population);                                         //
         }
         static void EnemyMove(ref int[,] map, ref Building[] buildings, int size)
         {
             int x, y;
-            for (y = 0; y < Map_Size_Y; y++) {
+            for (y = 0; y < Map_Size_Y; y++)
+            {
                 for (x = 0; x < Map_Size_X; x++)
                 {
-                    if (map[x,y] > 0)
+                    if (map[x, y] > 0)
                     {
-                        if (x - 1 >= 0 && map[x - 1,y] == 0 && random.Next(0, security.Amount / 10) == 0)
+                        if (x - 1 >= 0 && map[x - 1, y] == 0 && random.Next(0, security.Amount / 10) == 0)
                         {
                             map[x - 1, y] = map[x - 1, y] + 1;
                         }
@@ -99,16 +123,18 @@
             {
                 case "Easy": difficult = Difficulty.Easy; break;
                 case "Medium": difficult = Difficulty.Medium; break;
-                case "Hard": difficult = Difficulty.Hard; break;  
+                case "Hard": difficult = Difficulty.Hard; break;
             }
 
             if (difficult == Difficulty.Easy)
             {
                 timer = 100 * 2;
-            }else if (difficult == Difficulty.Medium)
+            }
+            else if (difficult == Difficulty.Medium)
             {
                 timer = 70 * 2;
-            }else if (difficult == Difficulty.Hard)
+            }
+            else if (difficult == Difficulty.Hard)
             {
                 timer = 50;
             }
@@ -143,7 +169,7 @@
                             case "b": buildings[countOfBuildings] = new FoodFactory('F', position, Color.Gray, ref electricity, ref food); break;
                             case "c": buildings[countOfBuildings] = new WaterFactory('W', position, Color.Green, ref electricity, ref water); break;
                             case "d": buildings[countOfBuildings] = new HospitalBuilding('H', position, Color.Pink, 1, ref health, ref electricity); break;
-                            case "e": buildings[countOfBuildings] = new ResidenceBuilding('R', position, Color.Purple, 1, ref security, ref health, ref electricity, ref food, ref water, ref money); break;
+                            case "e": buildings[countOfBuildings] = new ResidenceBuilding('R', position, Color.Yellow, 1, ref security, ref health, ref electricity, ref food, ref water, ref money); residenceBuildingsCount++; break;
                             case "f": buildings[countOfBuildings] = new SecurityBuilding('S', position, Color.Red, 1, ref security, ref electricity); break;
                         }
                         countOfBuildings++;
@@ -193,7 +219,8 @@
                     Console.SetCursorPosition(cursorX, cursorY);
                     Console.WriteLine("X");
                     haveInput = 1;
-                }else
+                }
+                else
                 {
                     drawMap(map, buildings, false);
                     Console.SetCursorPosition(0, 20);

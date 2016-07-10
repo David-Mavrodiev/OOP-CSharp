@@ -14,7 +14,7 @@ namespace Build_It_Daegon.Resources
         {
             var sum = food.IsPositive() + security.IsPositive() + electricity.IsPositive() + health.IsPositive() + water.IsPositive();
 
-            this.Amount = Constants.HalfHappiness + Constants.HalfHappiness * sum;
+            this.Amount = Constants.HalfHappiness + Constants.HappinessMultiplier * sum;
         }
     }
 }
