@@ -117,13 +117,14 @@
             int haveInput = 0;
             // choose difficulty level
             Console.WriteLine("Choose difficulty (Easy, Medium or Hard)");
-            string d = Console.ReadLine();
+            string d = Console.ReadLine().ToLower();                     // toLower just in case
+            Console.Clear();                                             // Remove the Choose difficulty text
             Difficulty difficult = new Difficulty();
             switch (d)
             {
-                case "Easy": difficult = Difficulty.Easy; break;
-                case "Medium": difficult = Difficulty.Medium; break;
-                case "Hard": difficult = Difficulty.Hard; break;
+                case "easy": difficult = Difficulty.Easy; break;
+                case "medium": difficult = Difficulty.Medium; break;
+                case "hard": difficult = Difficulty.Hard; break;
             }
 
             if (difficult == Difficulty.Easy)
