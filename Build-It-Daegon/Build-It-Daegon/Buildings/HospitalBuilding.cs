@@ -5,20 +5,20 @@
 
     public class HospitalBuilding : Building
     {
-        private Health Health;
+        private Health health;
 
 
         public HospitalBuilding(char letter, Position position, Color color, int size, ref Health health, ref Electricity electicity)
             : base(position, color, size, letter)
         {
-            this.Health = health;
+            this.health = health;
             electicity.Amount += Constants.ElectricityRemove;
         }
 
         public override void ManageResources()
         {
-
-            Health.Amount += Constants.HealthAdd;
+            health.Amount += Constants.HealthRemove;
+            health.Amount += Constants.HealthAdd;
         }
     }
 }

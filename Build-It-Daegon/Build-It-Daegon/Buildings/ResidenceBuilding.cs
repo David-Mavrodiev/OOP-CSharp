@@ -8,8 +8,8 @@
         //private Security Security;
         //private Health Health;
         //private Electricity Electricity;
-        private Food Food;
-        private Water Water;
+        private Food food;
+        private Water water;
         //private Money Money;
 
         public ResidenceBuilding(char letter, Position position, Color color, int size, ref Security security, ref Health health, ref Electricity electricity, ref Food food, ref Water water, ref Money money)
@@ -19,15 +19,15 @@
             security.Amount += Constants.SecurityRemove;
             health.Amount += Constants.HealthRemove;
             electricity.Amount += Constants.ElectricityRemove;
-            this.Food = food;
-            this.Water = water;
+            this.food = food;
+            this.water = water;
             money.Amount += Constants.MoneyRemove;
         }
 
         public override void ManageResources()
         {
-            Food.Amount += Constants.FoodRemove;
-            Water.Amount += Constants.WaterRemove;
+            food.Amount += Constants.FoodRemove;
+            water.Amount += Constants.WaterRemove;
         }
     }
 }

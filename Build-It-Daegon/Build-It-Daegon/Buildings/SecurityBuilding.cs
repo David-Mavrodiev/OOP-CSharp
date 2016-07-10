@@ -5,19 +5,20 @@
 
     public class SecurityBuilding : Building
     {
-        private Security Security;
+        private Security security;
 
         public SecurityBuilding(char letter, Position position, Color color, int size, ref Security security, ref Electricity electricity)
             : base(position, color, size, letter)
         {
             // TODO we need to decide what value every resource will add and remove
-            this.Security = security;
+            this.security = security;
             electricity.Amount += Constants.ElectricityRemove;
         }
 
         public override void ManageResources()
         {
-            Security.Amount += Constants.SecurityAdd;
+            security.Amount += Constants.SecurityAdd;
+            security.Amount += Constants.SecurityRemove;
         }
     }
 }

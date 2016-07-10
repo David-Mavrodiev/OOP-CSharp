@@ -17,6 +17,7 @@
         {
             // value here must be tested
             electricity.Amount += Constants.ElectricityAdd;
+            electricity.Amount += Constants.ElectricityRemove;
         }        
     }
 }
