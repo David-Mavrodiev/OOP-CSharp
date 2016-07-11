@@ -6,6 +6,7 @@
     using Build_It_Daegon.Resources;
     using System;
     using System.Threading;
+
     class Start
     {
 
@@ -151,12 +152,12 @@
                     {
                         Console.Clear();
                         Console.WriteLine("What kind of building you want to build?");
-                        Console.WriteLine("a) Electricity factory                  ");
-                        Console.WriteLine("b) Food factory                         ");
-                        Console.WriteLine("c) Water factory                        ");
-                        Console.WriteLine("d) Hospital                             ");
-                        Console.WriteLine("e) Residence                            ");
-                        Console.WriteLine("f) Security                             ");
+                        Console.WriteLine("e) Electricity factory                  ");
+                        Console.WriteLine("f) Food factory                         ");
+                        Console.WriteLine("w) Water factory                        ");
+                        Console.WriteLine("h) Hospital                             ");
+                        Console.WriteLine("r) Residence                            ");
+                        Console.WriteLine("s) Security                             ");
                         Console.WriteLine("Write only letter a, b, c, d, e or f    ");
                         string letter = Console.ReadLine();
                         Position position = new Position();
@@ -166,12 +167,12 @@
 
                         switch (letter)
                         {
-                            case "a": buildings[countOfBuildings] = new ElectricityFactory('E', position, Color.Blue, ref electricity); break;
-                            case "b": buildings[countOfBuildings] = new FoodFactory('F', position, Color.Gray, ref electricity, ref food); break;
-                            case "c": buildings[countOfBuildings] = new WaterFactory('W', position, Color.Green, ref electricity, ref water); break;
-                            case "d": buildings[countOfBuildings] = new HospitalBuilding('H', position, Color.Pink, 1, ref health, ref electricity); break;
-                            case "e": buildings[countOfBuildings] = new ResidenceBuilding('R', position, Color.Yellow, 1, ref security, ref health, ref electricity, ref food, ref water, ref money); residenceBuildingsCount++; break;
-                            case "f": buildings[countOfBuildings] = new SecurityBuilding('S', position, Color.Red, 1, ref security, ref electricity); break;
+                            case "e": buildings[countOfBuildings] = new ElectricityFactory('E', position, Color.Blue, ref electricity); break;
+                            case "f": buildings[countOfBuildings] = new FoodFactory('F', position, Color.Gray, ref electricity, ref food); break;
+                            case "w": buildings[countOfBuildings] = new WaterFactory('W', position, Color.Green, ref electricity, ref water); break;
+                            case "h": buildings[countOfBuildings] = new HospitalBuilding('H', position, Color.Pink, 1, ref health, ref electricity); break;
+                            case "r": buildings[countOfBuildings] = new ResidenceBuilding('R', position, Color.Yellow, 1, ref security, ref health, ref electricity, ref food, ref water, ref money); residenceBuildingsCount++; break;
+                            case "s": buildings[countOfBuildings] = new SecurityBuilding('S', position, Color.Red, 1, ref security, ref electricity); break;
                         }
                         countOfBuildings++;
                         drawMap(map, buildings, true);
