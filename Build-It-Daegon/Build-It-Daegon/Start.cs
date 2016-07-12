@@ -218,6 +218,9 @@
                     Console.SetCursorPosition(0, 20);
                     Console.WriteLine("Electricity: {0} Food: {1} Water: {2} Happiness: {3} \nHealth: {4} Money: {5} Population: {6} Security: {7}",
                     electricity.Amount, food.Amount, water.Amount, happiness.Amount, health.Amount, money.Amount, population.Amount, security.Amount);
+                    Console.WriteLine("Use up, down, left and right arrow keys to choose your position to build!");
+                    Console.WriteLine("Press enter to choose a building!");
+
                     Console.SetCursorPosition(cursorX, cursorY);
                     Console.WriteLine("X");
                     haveInput = 1;
@@ -228,6 +231,8 @@
                     Console.SetCursorPosition(0, 20);
                     Console.WriteLine("Electricity: {0} Food: {1} Water: {2} Happiness: {3} \nHealth: {4} Money: {5} Population: {6} Security: {7}",
                     electricity.Amount, food.Amount, water.Amount, happiness.Amount, health.Amount, money.Amount, population.Amount, security.Amount);
+                    Console.WriteLine("Use up, down, left and right arrow keys to choose your position to build!" );
+                    Console.WriteLine("Press enter to choose a building!");
                     Console.SetCursorPosition(cursorX, cursorY);
                     Console.WriteLine("X");
                 }

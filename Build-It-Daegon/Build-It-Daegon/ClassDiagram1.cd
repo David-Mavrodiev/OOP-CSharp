@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Build_It_Daegon.Start" Collapsed="true">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAEAAABEgAAAAAAMAAgAAADAACAAIAIAUABwAAFAo=</HashCode>
+      <FileName>Start.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Resources.Electricity" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resources\Electricity.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Build_It_Daegon.Resources.Food" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resources\Food.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Build_It_Daegon.Resources.Happiness" Collapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resources\Happiness.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Resources.Health" Collapsed="true">
+    <Position X="16.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resources\Health.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Build_It_Daegon.Resources.Money" Collapsed="true">
+    <Position X="19" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resources\Money.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Build_It_Daegon.Resources.Population" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Resources\Population.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Build_It_Daegon.Resources.Resource" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resources\Resouce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Resources.Security" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resources\Security.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Build_It_Daegon.Resources.Water" Collapsed="true">
+    <Position X="14.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resources\Water.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Build_It_Daegon.Enemy.EnemyBuilding" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Enemy\EnemyBuilding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Common.Constants" Collapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEACAAQASQAAAAAAAAAQAAAAIAAAEhAAAAAACAiAAQ=</HashCode>
+      <FileName>Common\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Common.CustomException" Collapsed="true">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Common\CustomException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Buildings.Building" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAgAAgAIAAAAAAQAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Buildings\Building.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Build_It_Daegon.Buildings.ElectricityFactory" Collapsed="true">
+    <Position X="14.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\ElectricityFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Buildings.Factory" Collapsed="true">
+    <Position X="14.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\Factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Buildings.FoodFactory" Collapsed="true">
+    <Position X="12" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Buildings\FoodFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Buildings.HospitalBuilding" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Buildings\HospitalBuilding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Buildings.ResidenceBuilding" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAI=</HashCode>
+      <FileName>Buildings\ResidenceBuilding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Buildings.SecurityBuilding" Collapsed="true">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Buildings\SecurityBuilding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Build_It_Daegon.Buildings.WaterFactory" Collapsed="true">
+    <Position X="16.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Buildings\WaterFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Build_It_Daegon.Common.Position" Collapsed="true">
+    <Position X="21.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Common\Position.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Build_It_Daegon.Interfaces.IConstructable" Collapsed="true">
+    <Position X="21.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Interfaces\IConstructable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Build_It_Daegon.Interfaces.ILoanable" Collapsed="true">
+    <Position X="23.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILoanable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Build_It_Daegon.Interfaces.IOptionable" Collapsed="true">
+    <Position X="25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Interfaces\IOptionable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Build_It_Daegon.Interfaces.IResourceable" Collapsed="true">
+    <Position X="21.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IResourceable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Build_It_Daegon.Interfaces.IValuable" Collapsed="true">
+    <Position X="23.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IValuable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Build_It_Daegon.Common.Color" Collapsed="true">
+    <Position X="21.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAABAAAAAAgAAAAAABAAABAAAAAAAAAAAADAAAAA=</HashCode>
+      <FileName>Common\Color.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Build_It_Daegon.Common.Difficulty" Collapsed="true">
+    <Position X="23.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAA=</HashCode>
+      <FileName>Common\Difficulty.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
