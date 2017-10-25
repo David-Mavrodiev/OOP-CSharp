@@ -8,7 +8,7 @@ Teamwork in C# OOP Course in Telerik Academy 2016-2017 Season.
 |       Name      | http://telerikacademy.com username |              https://github.com username              |
 |:---------------:|:----------------------------------:|:-----------------------------------------------------:|
 | David Mavrodiev |           david_mavrodiev          | [David-Mavrodiev](https://github.com/David-Mavrodiev) |
-|  Dima Atanasova |            DimaAtanasova           |         [DimaIV] (https://github.com/DimaIV)                                           |
+|  Dima Atanasova |            DimaAtanasova           |         [DimaIV](https://github.com/DimaIV)                                           |
 |  Hristo Vasilev |              Vasilev87             |    [Hristo-Vasilev](https://github.com/Vasilev87)     |
 | Miglena Petrova |           Miglena_Petrova          |             [MiglenaPetrova](https://github.com/MiglenaPetrova)                                          |
 |  Petya Kostova  |              pepsi_555             |    [petyakostova](https://github.com/petyakostova)    |
